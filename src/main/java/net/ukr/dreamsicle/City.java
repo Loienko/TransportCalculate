@@ -95,4 +95,8 @@ public class City {
                 ", distanceBetweenTown=" + distanceBetweenTown +
                 '}';
     }
+
+    public double getCalculate(){
+        return getDistanceBetweenTown()*1.3;
+    }
 }

@@ -10,7 +10,7 @@ import static net.ukr.dreamsicle.TransportRunner.em;
 public class DeleteCity {
 
     protected static void deleteCity(Scanner scanner) {
-        
+        // delete of the city by id
         System.out.print("Enter city id: ");
         String sId = scanner.nextLine();
         int id = Integer.parseInt(sId);

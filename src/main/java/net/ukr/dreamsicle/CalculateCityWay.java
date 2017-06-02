@@ -19,7 +19,10 @@ public class CalculateCityWay {
         if (c == null) {
             System.out.println("City not found!");
             return;
+        } else {
+            System.out.println("Lol: " + c.getFirstCityName());
         }
+
 
     }
 }

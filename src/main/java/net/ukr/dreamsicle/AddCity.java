@@ -11,20 +11,19 @@ public class AddCity {
 
     protected static void addCity(Scanner scanner) {
 
-        System.out.print("Enter city name: ");
-        String cityName = scanner.nextLine();
+        System.out.print("Input first city name: ");
+        String firstCityName = scanner.nextLine();
 
-        System.out.print("Enter distance to next town: ");
-        String sDistanceToNextTown = scanner.nextLine();
-        int distanceToNextTown = Integer.parseInt(sDistanceToNextTown);
+        System.out.println("Input last city name");
+        String lastCityName = scanner.nextLine();
 
-        System.out.print("Enter distance to next town: ");
-        String sDistanceToOtherTown = scanner.nextLine();
-        int distanceToOtherTown = Integer.parseInt(sDistanceToOtherTown);
+        System.out.print("Input distance between town: ");
+        String sDistanceBetweenTown = scanner.nextLine();
+        Integer distanceBetweenTown = Integer.parseInt(sDistanceBetweenTown);
 
         em.getTransaction().begin();
         try {
-            City c = new City(cityName, distanceToNextTown, distanceToOtherTown);
+            City c = new City(firstCityName, lastCityName, distanceBetweenTown);
             em.persist(c);
             em.getTransaction().commit();
         } catch (Exception ex) {
