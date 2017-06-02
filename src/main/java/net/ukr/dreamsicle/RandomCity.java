@@ -7,7 +7,7 @@ import static net.ukr.dreamsicle.TransportRunner.em;
 
 /**
  * Created by Yura on 01.06.2017.
- *Next update will be add the another random city in the two cities
+ * To exclude the coincidence between two cities, need to make more work with the code.
  */
 public class RandomCity {
 
@@ -25,7 +25,7 @@ public class RandomCity {
 
     protected static void insertRandomCity(Scanner scanner) {
 
-        System.out.print("Input the number of cities ");
+        System.out.print("Input the number of cities: ");
         String sCount = scanner.nextLine();
         int count = Integer.parseInt(sCount);
 

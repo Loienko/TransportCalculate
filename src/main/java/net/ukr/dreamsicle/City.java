@@ -88,15 +88,9 @@ public class City {
 
     @Override
     public String toString() {
-        return "City{" +
-                "id=" + id +
-                ", firstCityName='" + firstCityName + '\'' +
-                ", lastCityName='" + lastCityName + '\'' +
-                ", distanceBetweenTown=" + distanceBetweenTown +
-                '}';
+        return  "id= " + id +
+                ", first City Name= " + firstCityName + ", last City Name= " + lastCityName
+                + ", distance Between Town="  + distanceBetweenTown;
     }
 
-    public double getCalculate(){
-        return getDistanceBetweenTown()*1.3;
-    }
 }

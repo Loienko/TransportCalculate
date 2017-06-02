@@ -14,7 +14,7 @@ public class AddCity {
         System.out.print("Input first city name: ");
         String firstCityName = scanner.nextLine();
 
-        System.out.println("Input last city name");
+        System.out.println("Input last city name^ ");
         String lastCityName = scanner.nextLine();
 
         System.out.print("Input distance between town: ");
